@@ -1,7 +1,174 @@
-<p>Welcome to plane themed</p><br>
-<br>
-<a href="/plane-themed">Plane Themed - Bookmarks that are plane themed</a><br>
-<a href="/fish-scriptview">Planes Scriptview - Code viewer</a><br>
-<a href="/Plane-Hub">Plane Hub - Upload plane photos</a><br>
-<a href="https://ftgames.yxz/f111_game">F111 Game - A fun game where you face off an enemy mig 23 in an f111</a>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>✈️ Plane Themed</title>
 
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;600;700&display=swap" rel="stylesheet">
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    font-family:"Space Grotesk",sans-serif;
+    background:
+        radial-gradient(circle at top,#1d4f7c 0%,#0b1625 45%,#02060d 100%);
+    min-height:100vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    padding:40px;
+    color:white;
+}
+
+.container{
+    width:min(950px,100%);
+    background:rgba(255,255,255,.05);
+    backdrop-filter:blur(18px);
+    border:1px solid rgba(79,195,247,.25);
+    border-radius:28px;
+    padding:45px;
+    box-shadow:
+        0 0 40px rgba(79,195,247,.18),
+        inset 0 0 20px rgba(255,255,255,.02);
+}
+
+h1{
+    text-align:center;
+    font-size:3.3rem;
+    margin-bottom:12px;
+    font-weight:700;
+    background:linear-gradient(90deg,#7dd3fc,#38bdf8,#7dd3fc);
+    background-size:200%;
+    -webkit-background-clip:text;
+    -webkit-text-fill-color:transparent;
+    animation:gradient 6s linear infinite;
+}
+
+.subtitle{
+    text-align:center;
+    color:#bfd9ec;
+    margin-bottom:40px;
+    font-size:1.1rem;
+}
+
+@keyframes gradient{
+    from{background-position:0%;}
+    to{background-position:200%;}
+}
+
+.links{
+    display:grid;
+    gap:20px;
+}
+
+.links a{
+    display:block;
+    text-decoration:none;
+    color:white;
+    background:#111827;
+    border:1px solid rgba(79,195,247,.25);
+    border-radius:18px;
+    padding:22px;
+    transition:.25s;
+}
+
+.links a:hover{
+    transform:translateY(-5px);
+    border-color:#4fc3f7;
+    box-shadow:
+        0 0 30px rgba(79,195,247,.45),
+        0 0 50px rgba(125,249,255,.15);
+}
+
+.title{
+    font-size:1.35rem;
+    font-weight:700;
+    margin-bottom:8px;
+}
+
+.desc{
+    color:#bfd9ec;
+    line-height:1.6;
+}
+
+footer{
+    margin-top:35px;
+    text-align:center;
+    color:#7c93a8;
+    font-size:.95rem;
+}
+
+@media(max-width:700px){
+
+    body{
+        padding:20px;
+    }
+
+    .container{
+        padding:25px;
+    }
+
+    h1{
+        font-size:2.4rem;
+    }
+
+}
+</style>
+
+</head>
+<body>
+
+<div class="container">
+
+<h1>✈️ Plane Themed</h1>
+
+<p class="subtitle">
+Explore aviation websites, coding tools, aircraft photos and games.
+</p>
+
+<div class="links">
+
+<a href="/bookmarks">
+    <div class="title">🛩️ Plane Bookmarks</div>
+    <div class="desc">
+        Browse a collection of aviation websites, flight resources, aircraft references and useful plane-themed links.
+    </div>
+</a>
+
+<a href="/fish-scriptview">
+    <div class="title">💻 Plane ScriptView</div>
+    <div class="desc">
+        Write HTML, CSS and JavaScript with a live preview directly in your browser.
+    </div>
+</a>
+
+<a href="/Plane-Hub">
+    <div class="title">📸 Plane Hub</div>
+    <div class="desc">
+        Upload, browse and share your favourite aircraft photographs with other aviation enthusiasts.
+    </div>
+</a>
+
+<a href="https://ftgames.xyz/f111_game">
+    <div class="title">🎮 F111 Game</div>
+    <div class="desc">
+        Fly the iconic F-111 and take on an enemy MiG-23 in a fast-paced aerial dogfight.
+    </div>
+</a>
+
+</div>
+
+<footer>
+    ✈️ Welcome aboard Plane Themed
+</footer>
+
+</div>
+
+</body>
+</html>
